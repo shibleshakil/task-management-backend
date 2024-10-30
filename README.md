@@ -31,10 +31,14 @@ Admin credentials
 Email: admin@admin.com
 Password: admin
 
-
 #To get the email notification about Task update put an email by using variable 'ADMIN_EMAIL' in .env file 
 ```
 ADMIN_EMAIL=
+```
+
+#To send the email notifications about the upcoming tasks deadline of following 3 days, run  
+```
+php artisan send:task-deadline-reminder
 ```
 
 N.B: Task Management Frontend
